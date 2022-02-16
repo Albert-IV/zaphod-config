@@ -26,35 +26,49 @@
 #define SYM 2
 #define OTHER 3
 
-// Something brought in with the default config
-/* #define NAV_L 1 */
-/* #define OTH_L 2 */
-/* #define NUM_L 3 */
-/* #define SYM_L 4 */
-/* #define MED_L 5 */
-/* #define FUN_L 6 */
-
 &sk {
   release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
 
 / {
-    /* combos { */
-    /*     compatible = "zmk,combos"; */
+    combos {
+        compatible = "zmk,combos";
 
-    /*     med_mo { */
-    /*         timeout-ms = <50>; */
-    /*         key-positions = <30 31>; */
-    /*         bindings = <&mo MED_L>; */
-    /*     }; */
+/*              34-KEY POSITIONS
 
-    /*     fn_mo { */
-    /*         timeout-ms = <50>; */
-    /*         key-positions = <32 33>; */
-    /*         bindings = <&mo FUN_L>; */
-    /*     }; */
+  ╭────────────────────╮ ╭────────────────────╮
+  │  0   1   2   3   4 │ │  5   6   7   8   9 │
+  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
+  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
+  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
+              ╰────────╯ ╰────────╯            */
 
-    /* }; */
+
+        escape {
+            timeout-ms = <50>;
+            key-positions = <0 10>;
+            bindings = <&kp ESC>;
+        };
+
+        enter {
+            timeout-ms = <50>;
+            key-positions = <9 19>;
+            bindings = <&kp ENTER>;
+        };
+
+        tab {
+            timeout-ms = <50>;
+            key-positions = <3 13>;
+            bindings = <&mo TAB>;
+        };
+
+        untab {
+            timeout-ms = <50>;
+            key-positions = <6 16>;
+            bindings = <&mo LS(TAB)>;
+        };
+
+    };
 
     behaviors {
 
