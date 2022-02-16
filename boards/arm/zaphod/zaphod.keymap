@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define XXX &none
+#define ___ &trans
+
 #define WIN_D_L LC(LG(LEFT))
 #define WIN_D_R LC(LG(RIGHT))
 
