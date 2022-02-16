@@ -10,6 +10,7 @@ if ZMK_DISPLAY
 
 menuconfig ZAPHOD_BONGO_CAT
     bool "Show WPM bongo cat"
+    default y
     select ZMK_WPM
     select LVGL_USE_IMG
     select LVGL_USE_ANIMATION
