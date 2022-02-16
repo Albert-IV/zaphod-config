@@ -20,7 +20,7 @@
 
 #define BASE 0
 #define NAV 1
-#define NUM 2
+#define SYM 2
 #define OTHER 3
 
 // Something brought in with the default config
@@ -91,7 +91,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base_layer {
             label = "BASE";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
