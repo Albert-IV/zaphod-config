@@ -59,13 +59,13 @@
         tab {
             timeout-ms = <50>;
             key-positions = <3 13>;
-            bindings = <&mo TAB>;
+            bindings = <&kp TAB>;
         };
 
         untab {
             timeout-ms = <50>;
             key-positions = <6 16>;
-            bindings = <&mo LS(TAB)>;
+            bindings = <&kp LS(TAB)>;
         };
 
     };
